@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+        <button id="open-popup">New Book</button>
+        <div id="book-display"></div>
+        <form id="add-book-form" name="add-book-form">
+            <div class="form-item">
+                <label for="title"><b>Title</b></label>
+                <input type="text" placeholder="Title" name="title" required>
+            </div>
+            <div class="form-item">
+                <label for="author"><b>Author</b></label>
+                <input type="text" placeholder="Author" name="author" required>
+            </div>
+            <div class="form-item">
+                <label for="pages"><b>Number of Pages</b></label>
+                <input type="number" placeholder="Amount of Pages" name="pages" required>
+            </div>
+            <div class="form-item">
+                <label for="read-status"><b>Have you read this book?</b></label>
+                <div>
+                    <input type="radio" name="read-status" value="true" required>
+                    <label for="true">Yes</label>
+                    <input type="radio" name="read-status" value="false">
+                    <label for="true">No</label>
+                </div>
+            </div>
+            
+            <!--type="button" keeps page from refreshing-->
+            <button type="button" id="book-submit">Add Book</button> 
+            <button type="button" id="book-cancel">Cancel</button>
+        </form>
+    </div>
+    
+</body>
+</html>
