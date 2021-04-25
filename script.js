@@ -138,11 +138,5 @@ function validateBookSubmit(title, author, pages, read) {
 }
 
 //Library Display Tests
-addBookToLibrary("Oranges", "Big Chicken", 12, false);
-addBookToLibrary("Apples", "Little Chicken", 10, true);
-addBookToLibrary("Corn", "Medium Chicken", 24, true);
-
-addBookToLibrary("Oranges", "Big Chicken", 12, false);
-addBookToLibrary("Apples", "Little Chicken", 10, true);
-addBookToLibrary("Corn", "Medium Chicken", 24, true);
+addBookToLibrary("Test Book", "Zaria S. Burton", 0, false);
 displayLibrary();
