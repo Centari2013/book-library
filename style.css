@@ -16,7 +16,7 @@ blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none
 
 #book-display {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, 200px);
     grid-template-rows: auto;
     gap: 20px;
 }
@@ -27,7 +27,6 @@ blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none
     white-space: pre-line;
     padding: 10px;
     gap: 10px;
-    min-width: 200px;
     max-width: 250px;
 }
 
