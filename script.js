@@ -1,24 +1,21 @@
 //Library Display and Data Storage
 const bookDisplay = document.querySelector("#book-display");
 let myLibrary = [];
-function Book(title, author, pages, readStatus, position){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.readStatus = readStatus;
-    this.position = position;
-    this.info = function() {
+const Book = (title, author, pages, readStatus, position) => {
+    const info = function() {
         let read = (readStatus) ? "read" : "not read yet";
         return `${title}\n\nAuthor: ${author}\nPages: ${pages}\nRead Status: ${read}`;
     }
-    this.toggleReadStatus = function() {
+    const toggleReadStatus = function() {
         readStatus = (readStatus) ? false: true;
     }
+
+    return {title, author, pages, readStatus, position, info, toggleReadStatus};
 }
 
 function addBookToLibrary(title, author, pages, readStatus) {
     let position = myLibrary.length;
-    let book = new Book(title, author, pages, readStatus, position);
+    let book = Book(title, author, pages, readStatus, position);
     myLibrary.push(book);
 }
 
